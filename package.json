@@ -1,0 +1,17 @@
+{
+  "name": "my-firebase-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "firebase-admin": "^11.10.1",
+    "firebase-mock": "^2.3.2"
+  }
+}
