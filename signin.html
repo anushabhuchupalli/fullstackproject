@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Weather Info App</title>
+    <style>
+        /* Reset some default styles for consistency */
+    /* Reset some default styles for consistency */
+body, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main.welcome {
+    text-align: center;
+    padding: 2rem;
+}
+
+.signup-section {
+    background: linear-gradient(to bottom,rgba(0,0,0, 0.52), rgba(0,0,0, 0.3));
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 330px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.signup-form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #555;
+}
+
+.signup-link, .login-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.signup-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main.welcome {
+        padding: 1rem;
+    }
+    
+    .signup-section {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Weather Info App</h1>
+    </header>
+    <main class="welcome">
+        <p>Get the latest weather information for your location!</p>
+        <a href="#signup" class="signup-link">Sign Up</a>
+    </main>
+    
+    <section id="signup" class="signup-section">
+        <header>
+            <h1>Sign Up</h1>
+        </header>
+        <main>
+            <form class="signup-form" action="/signup" method="POST"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Sign Up</button><br>
+            </form>
+            <p>Already have an account? <a href="loginup.html" class="login-link">Log In</a></p>
+        </main>
+    </section>
+</body>
+</html>
